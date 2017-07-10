@@ -1,0 +1,6 @@
+npm-debug.log
+.firebaserc
+.DS_Store
+.*.swp
+node_modules/
+
