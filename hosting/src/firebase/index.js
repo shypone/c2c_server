@@ -3,5 +3,6 @@ import { firebaseConfig } from './config.js';
 
 export const firebaseApp = firebase.initializeApp(firebaseConfig);
 export const firebaseDb = firebaseApp.database();
+export const firebaseStg = firebaseApp.storage();
 
 

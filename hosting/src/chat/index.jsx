@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '../index.css';
 
-import { firebaseDb } from './firebase/index.js'
-import Message from './chat/Message.js'
-import ChatBox from './chat/ChatBox.js'
+import { firebaseDb } from '../firebase/index.js'
+import Message from './Message.js'
+import ChatBox from './ChatBox.js'
 
 const messagesRef = firebaseDb.ref('messages')
 
-class App extends Component {
+class Chat extends Component {
 
   constructor(props) {
     super(props);
@@ -21,6 +20,7 @@ class App extends Component {
       messages : []
     }
   }
+
 
   render() {
     return (
@@ -88,5 +88,5 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Chat;
 
